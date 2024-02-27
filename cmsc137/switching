@@ -1,0 +1,118 @@
+switch
+- temporary connection
+
+switched connection
+- circuity switching
+- packet switching
+- message switching
+
+switching and tcp/io layers
+- physical layer
+	- circuit switching
+- data link layer
+	- packet switching (virtual approach)
+- network layer
+	- packet switching ( virtual / datagram)
+- applicatoin layer
+	- message switching
+
+circuit -switched network
+- set of switch connected by physical links
+- connectin between two stations is a dedicated path made of one or more links
+- only one channel in a link is used
+- each link is normally divided into n channels by FDM or TDM
+- phases: 
+	- connection setup
+	- data transfer
+	- connection teardown
+
+- inefficient
+	- dedicated link can be unused
+- minimal delay
+- takes place at the physical layer
+- resources to be used must be resereved
+- data transferred are a continuous flow
+- no addressing involved in the data transfer
+
+packet switched network
+- messages are divided into packets: fixed or variable size
+- no resource allocation for a packet
+- resources are allocated on demand; FCFS
+- 2 types: 
+	- datagram networks
+	- virtual-circuit networks
+
+- datagram
+	- each packet is treated independently of all others
+	- datagram switching done at the network layer
+	- datagrams may arrive out of order or get lost
+	- connectionless - no information on state of connection is save
+	- uses a routing table that is based on the destination address
+	- routing tables 
+		- dynamic and are updated periodically
+	- header contains address
+	- destination address in the header of a packet in a diagram network remains the same throughout the journey of the packet
+	- efficient
+		- resource are allocated when there are packets to be transferred
+	- more delay 
+		- waiting time in switches; 
+		- delay is not uniform
+		- total delay : 3  * transmission time + 3 * propagation time +2 * waiting time
+
+
+- virtual circuit network
+	- cros between circuit switched and datagram network
+	- with connection setup and teardown phases
+	- resources can be allocated during the setpu phase or on demand
+	- packetized data with address in header (local jurisdiction only)
+	- packet follows the same path established
+	- implemented in the data link layer
+
+	- source or a destination needs to have a global address - used to create VCI
+	- virtual circuit identifier
+		- small number that has only switch scope (between two switches)
+	- data transfer phase
+		- all switches need to have a table entry ( in simplest form has 4 columns)
+
+	- setup phase
+		- setup request 
+			- frame is sent from the source to the destination; switch acts as a packet switch (routing table is different from switching table)
+		- acknowledgement
+			- special frame (ack frame ) completes the entries
+	- efficiency
+		- all packets belonging to the same source and dest travel 
+	- total delay = 3 * transmission time + 3* 
+
+structure of a circuit switch
+- space division switch 
+	- paths in the circuit are separated spatially
+	- crossbar
+	- multistage
+- time division switch 
+	- used tdm
+	- time slot
+
+
+-crossbar 
+	- connects n inputs to m outputs to a crosspoint
+- multistage 
+	- combines crossbar siwtches in several stages
+- time-slot interchange(tsi):
+	- consists of random access memory with several memory locations
+- time space time
+	- tsi - crossbar - tsi
+
+
+structure of a packet switch
+- input ports
+- output ports
+- routing processor
+- switching fabric
+	- crossbar
+	- banyan
+	- batcher-banyan switch
+
+- banyan switch
+	- multistage switch with microswitches at each stage that route the packets based on the output port represented by a binary switch
+
+

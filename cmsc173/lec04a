@@ -1,0 +1,104 @@
+human-centered ai
+	- systems that work for human, not replace and replicate them
+	- user-centered
+	- community-centered
+	- society-centred
+	- needs interdisciplinary teams
+		- needs to be integrated from the start
+
+	- example:
+		- self driving cars
+			- user-centered
+				- driver
+			- community-centered
+				- drivers of other autnomous and non-autonomous cars, pedestrians, cyclists, etc.
+			- society-level
+				- city or region
+
+
+	who does  hci?
+	- multidisciplinary field
+	- machine side: 
+		- computer graphics , operating systems, pls, development, environments, networking, software engineering, mobility, and engr.
+	- increasingly: 
+		- industrial, product design, digital media, and processing, infosense, robotics
+	- on the human side:
+		- psychology and kinesiology
+			- cognitive, perceptual , and motor behavior
+			- human capabilities to use and learn machines
+		- sociology and anthropology
+			- group and cultural behavior
+		- art and graphic + tactile design
+			- visual design principles and aesthetics
+
+
+	what makes it hci
+		- joint performance of tasks by human and computers
+		- structure of communication between human/computer and human/human meditated by computers
+
+	HCI process
+	- stages of design
+	- design stages have different goals
+	- evaluatoin tools to support those goals
+	- identifying stakeholders
+	
+
+	where does the hci process start
+	- identifying human activities needing better support
+		- designing a system that provides what they really need
+	- specifiying usability ; utility; user exp and deploying it for usefulness
+
+	process stages and their goals
+		- predesign : understand the problem
+		- early design: explore design space
+		- mid design: develop the chosen approach
+		- late design: integrate and start to deploy
+		- always: evaluate and prototype
+	
+	iteration: the most key feature
+	- its hard to predict or perfectly model:
+		- people - diversity in abilities, needs, motivations...
+		- contexts of use
+		- how they want to do their taks/activity
+		- how they will view your interface
+	
+	-> designer's own progressive understanding of issues
+
+	designing for people is not exactly like building a bridge
+
+	evaluation tools: 
+
+	roadmap to evaluation types
+	- predesign
+		- ethnography
+		- observation, interview, focus gropus
+		- questionnaires, surveys
+
+	- early design
+		- interviews, focus groups, observation
+		- questionnaires, survey
+		- contextual inquiry & work modeling
+		- task analysis, task / cognitive
+
+	- mid desing / late design
+	
+	who are the stakeholders
+	- anyone who has a reason to care about the product
+
+	- user: convenience, functionality
+	- boss: price, worker efficiency
+	- developer : ease of development, deadlines
+	- manufacturer
+
+	bowing to reality
+	- deadlines
+	- budgets
+	
+
+	attitudes towards design
+	- technology-centered design
+		- design decisions guided by technology
+	- prevalent atitude in real world because
+		- tech is fun
+		- making novel things is engaging for the designer
+		- seems like it hsould work well, or looks cool people often buy it too

@@ -1,0 +1,53 @@
+Using Caches
+- caches are small and fast memory elements between the processor and DRAM
+- this memory acts as a low-latency, high bandwidth storage
+- if a piece of data is repeatedly used, the effective latency of this memory system can be
+reduced by the cache
+- the fraction of data references satisfied by the cache is called the CACHE HIT RATIO
+- cache hit ratio achieved by a cache on a memory system often determines its performance
+- repeated references to the same data item correspond to TEMPORAL LOCALITY
+- Lesson : DATA REUSE is critical for cache performance
+
+Impact of bandwidth
+- Memory Bandwidth is determined by the bandwidth of the memory bus and the memory units
+- Memory bandwidth can be improved by increasing the size of memory blocks
+- Lesson: increasing the block size does not change the latency
+- in practice, wide buses are expensive
+- consecutive words are sent on the memory bus on subsequent bus cycles after the first word is retrieved
+- increased bandwidth results in higher peak computation rates
+- data layouts were assumed to be such that consecutive data words in memory were used by successive instructions (SPATIAL LOCALITY OF REFERENCE)
+- if we take a LAYOUT-CENTRIC VIEW, computations must be reordered to enhance spatial locality of reference.
+
+Stridded Access
+- stridded access results in very poor performance in matrix code
+	- depends whether arays are column major
+	- or row major
+- multiplying a matrix A with a vector b
+	- column major data access
+		[x][][] [x]
+		[x][][] [x]
+		[x][][] [x]
+	- row major
+		[x][x][x] [x]
+		[][][]    []
+		[][][]    []
+
+Summary
+- exploiting spatial and temporal locality in applications is critical for 
+amortizing memory latency and increasing effective memory bandwidth
+- the ratio of the number of operations to number of memory accesses is a good indicator of anticipated tolerance to memory bandwidth
+- memory layouts and organizing computation appropriately can make a signficiant impact on the spatial and temproal locality
+
+
+Hiding Memory Latency
+- problem : brwosing the web in a very slow network connection
+
+- three possible solutions:
+	- anticipate which pages we are going to browse ahead of time and issue requests for them in advance
+	- we open multiple browsers and access different pages in each browser thus while we are waiting for one page to load, we could be reading others 
+	- we access a whole bunch of pages in one go - amortizing the latency across various accesses
+
+
+Approaches
+- multithreading
+- 

@@ -1,0 +1,15 @@
+#feb 23, 2024
+
+bounding the terms 
+(when the summation is hard to bound)
+
+summation of i from 1 to n
+= 1 + 2 + 3 + 4 + .. + n
+
+- get the largest term
+- bound the individual terms
+
+- > summation of i to n <= amax
+
+
+- 

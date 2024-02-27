@@ -1,0 +1,11 @@
+introduction to parallel computing
+
+1. partitioning by output
+	- if the result is independent from each other
+	- assigning threads to solve different part of the problems simultaneously 
+	- 
+2. partitioning input data
+	- 
+
+
+

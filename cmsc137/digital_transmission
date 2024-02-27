@@ -1,0 +1,60 @@
+digital -digital conversion
+- represented digital data using digital signals
+- involves 3 techniques:
+	- line coding
+	- block coding
+	- scrambling
+- line coding is always needed; block coding and scrambling may or may not be needed
+
+- line coding
+	- data element
+		- smallest entity that can represent a piece of info (bit)
+	- signal element
+		- shortest unit timewise of a digital signal
+	- r = number of data elements / signal elements
+
+
+	- data rate (bit rate)
+		- number of bits sent in 1 sec
+	- signal rate ( pulse rate, modulation rate, baud rate)
+		- number of signal elements sent in 1 second (baud)
+	- goal: increase data rate while decreaseing signal rate
+	- S = c * N * (1/r) 
+
+	- process of converting dgital data ( strings of 0 and 1 ) into digital signal
+	- considerations for choosing good coding scheme
+		- effective bandwidth
+			- finite compared to absolute bandwidth
+			- baud rate determines the required bandwidth
+			- bandiwdth is proportional to baud rate
+
+		- baseline wandering
+			- receiver calculates a running average of the received signal power - baseline
+			- incoming signal is evaluated against baseline
+			- long sequence of 0 and 1 can cause a drift in the baseline
+			- line coding scheme must prevent this
+		- direct current (DC) components
+			- very low (near 0) frequencies created by the spectrum when digital signal is constant for a while
+			- some systems cannot pass low frequencies
+			- some systems use electrical copuling
+			- no DC component is desired
+
+		- self-synchronization
+			- digital signal includes timing information in the data being transmitted
+		- built in error detection
+			- signal has built in error detectoin
+		- immunity to noise and interference
+		- complexity
+	- line coding schemes
+		- unipolar - all signal levels are above or below time axis (nrz)
+			- non-return to zero
+			- 1 - positive volt, 0 - zero
+			- scheme is prone to baseline wandering ; simple but energy inefficient
+		- polar 
+			- nrzl (level)
+				- level of voltage determines value of bit
+			- nrzi (invert)
+				- change or lack of change in the level of the voltage determines the value of the bit ( 0 - no change)
+		- bipolar
+		- multilevel
+		- multitransition - mlt
